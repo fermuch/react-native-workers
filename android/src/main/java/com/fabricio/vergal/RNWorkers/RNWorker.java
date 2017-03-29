@@ -26,7 +26,7 @@ public class RNWorker implements ReactInstanceEventListener {
     public static final String DEFAULT_JS_ENTRY_POINT = "index.worker";
     public static final String DEFAULT_JS_BUNDLE_ASSET = "index.worker.bundle";
     public static final String PREFS_DEBUG_SERVER_HOST_KEY = "debug_http_host";
-    public static final int DEFAULT_WORKER_PORT = 8082;
+    public static final int DEFAULT_WORKER_PORT = 8085;
 
     private final Application mApplication;
     private final int mPort;
@@ -168,7 +168,7 @@ public class RNWorker implements ReactInstanceEventListener {
             mEntryPoint = null;
             mBundleAsset = null;
             mBundleFile = null;
-            mPort = 8082;
+            mPort = 8085;
         }
 
         public Builder entryPoint(final String entryPoint) {
